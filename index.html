@@ -122,6 +122,7 @@
          
          context2.putImageData(imageData, 0, 0); // command that applies to all functions to the image that will be displayed on the second canvas
          
+         
         } // end of img.onload
         
         img.src = reader.result;
@@ -142,13 +143,18 @@
  <body>
   <div data-role="page">
     <div data-role="header">
+     
+     
     <h1>Primary Colors</h1></div><!-- /header -->
     <div data-role="content">	
-      <h2>Push button to take picture.</h2>
+     
+      <h2>Push button to take picture.</h2> <!--text header will appear in the space below the main header-->
       <div>
-        Press orange button to create or choose image file:
+       
+        Press button to create or choose image file: <!--code allows an image file to be uploaded-->
         <input type="file" id="fileInput" STYLE="background-color: #FF6600;">
       </div>
+     
       <div id="messageDisplayArea"></div>
       
       <canvas id="myCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
