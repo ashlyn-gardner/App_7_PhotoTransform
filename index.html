@@ -109,7 +109,7 @@
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
           
          var canvas2 = document.getElementById('myCanvas2'); // command codes for the display of only the blue intensities of each pixel to be shown on the second canvas
-         var context2 = canvas2.getContext("2d");
+         var context2 = canvas2.getContext("2d"); // command provides context for the drawing surface of a <canvas> element
          
          var imageData = context.getImageData(0, 0, 600, 500);
          var data = imageData.data; // command codes for the pixel data of an area of the canvas object
@@ -157,13 +157,13 @@
      
       <div id="messageDisplayArea"></div>
       
-      <canvas id="myCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
+      <canvas id="myCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas> <!--HTML and script code for setting up the second canvas, which will display the same image with only the blue intensities of the pixels being shown-->
       <script> /* This script initiates the cavas and puts the text on the canvas "myCanvas" */
-        var canvas = document.getElementById('myCanvas');
-        var context = canvas.getContext("2d");
-        context.font = '20pt Calibri';
-        context.fillStyle = "black";
-        context.fillText("Original image will go here", 10, 20);
+        var canvas = document.getElementById('myCanvas'); // command calls "myCanvas" and saves it to the canvas variable
+        var context = canvas.getContext("2d"); // command provides context for the drawing surface of a <canvas> element
+        context.font = '20pt Calibri'; // command sets the font size and style
+        context.fillStyle = "black"; // command sets the text fill color
+        context.fillText("Original image will go here", 10, 20); // command sets the coordinates of the image
       </script>
 
     </div><!-- /content -->
