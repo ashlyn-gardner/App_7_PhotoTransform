@@ -120,6 +120,8 @@
           data[i + 1] = 0; // command that sets the red intensity to zero
          }
          
+         context2.putImageData(imageData, 0, 0); // command that applies to all functions to the image that will be displayed on the second canvas
+         
         } // end of img.onload
         
         img.src = reader.result;
