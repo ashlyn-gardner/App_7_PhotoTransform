@@ -110,6 +110,9 @@
           
          var canvas2 = document.getElementById('myCanvas2'); // command codes for the display of only the blue intensities of each pixel to be shown on the second canvas
          var context2 = canvas2.getContext("2d");
+         
+         var imageData = context.getImageData(0, 0, 600, 500);
+         var data = imageData.data; // command codes for the pixel data of an area of the canvas object
           
           
         } // end of img.onload
